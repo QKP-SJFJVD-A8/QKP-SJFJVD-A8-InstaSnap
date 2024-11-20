@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="10" passed="5" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser Launched Succesfully]]>
+    </line>
+    <line>
+      <![CDATA[Login Successful]]>
+    </line>
+    <line>
+      <![CDATA[ Method M10------Team B]]>
+    </line>
+    <line>
+      <![CDATA[Log out Successful]]>
+    </line>
+    <line>
+      <![CDATA[Login Successful]]>
+    </line>
+    <line>
+      <![CDATA[ Method M2------Team B]]>
+    </line>
+    <line>
+      <![CDATA[Log out Successful]]>
+    </line>
+    <line>
+      <![CDATA[Login Successful]]>
+    </line>
+    <line>
+      <![CDATA[ Method M4------Team B]]>
+    </line>
+    <line>
+      <![CDATA[Log out Successful]]>
+    </line>
+    <line>
+      <![CDATA[Login Successful]]>
+    </line>
+    <line>
+      <![CDATA[ Method M6------Team B]]>
+    </line>
+    <line>
+      <![CDATA[Log out Successful]]>
+    </line>
+    <line>
+      <![CDATA[Login Successful]]>
+    </line>
+    <line>
+      <![CDATA[ Method M8------Team B]]>
+    </line>
+    <line>
+      <![CDATA[Log out Successful]]>
+    </line>
+    <line>
+      <![CDATA[Browser Closed Succesfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-11-19T15:52:17 IST" name="Suite" finished-at="2024-11-19T15:52:45 IST" duration-ms="27777">
+    <groups>
+      <group name="B">
+        <method signature="DemoTest1.m10()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" name="m10" class="Demo.DemoTest1"/>
+        <method signature="DemoTest1.m2()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" name="m2" class="Demo.DemoTest1"/>
+        <method signature="DemoTest1.m4()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" name="m4" class="Demo.DemoTest1"/>
+        <method signature="DemoTest1.m6()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" name="m6" class="Demo.DemoTest1"/>
+        <method signature="DemoTest1.m8()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" name="m8" class="Demo.DemoTest1"/>
+      </group> <!-- B -->
+    </groups>
+    <test started-at="2024-11-19T15:52:17 IST" name="Test" finished-at="2024-11-19T15:52:45 IST" duration-ms="27777">
+      <class name="Demo.DemoTest1">
+        <test-method is-config="true" signature="BrowserSetup(java.lang.String)[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:17 IST" name="BrowserSetup" finished-at="2024-11-19T15:52:19 IST" duration-ms="1963" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Launched Succesfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BrowserSetup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:19 IST" name="login" finished-at="2024-11-19T15:52:24 IST" duration-ms="5271" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="m10()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:24 IST" name="m10" finished-at="2024-11-19T15:52:24 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ Method M10------Team B]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m10 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:24 IST" name="logout" finished-at="2024-11-19T15:52:25 IST" duration-ms="491" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log out Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:25 IST" name="login" finished-at="2024-11-19T15:52:29 IST" duration-ms="4392" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="m2()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:29 IST" name="m2" finished-at="2024-11-19T15:52:29 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ Method M2------Team B]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:29 IST" name="logout" finished-at="2024-11-19T15:52:30 IST" duration-ms="588" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log out Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:30 IST" name="login" finished-at="2024-11-19T15:52:34 IST" duration-ms="4409" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="m4()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:34 IST" name="m4" finished-at="2024-11-19T15:52:34 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ Method M4------Team B]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m4 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:34 IST" name="logout" finished-at="2024-11-19T15:52:35 IST" duration-ms="599" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log out Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:35 IST" name="login" finished-at="2024-11-19T15:52:39 IST" duration-ms="4348" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="m6()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:39 IST" name="m6" finished-at="2024-11-19T15:52:39 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ Method M6------Team B]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m6 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:39 IST" name="logout" finished-at="2024-11-19T15:52:40 IST" duration-ms="600" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log out Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:40 IST" name="login" finished-at="2024-11-19T15:52:44 IST" duration-ms="4231" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="m8()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:44 IST" name="m8" finished-at="2024-11-19T15:52:44 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ Method M8------Team B]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m8 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:44 IST" name="logout" finished-at="2024-11-19T15:52:44 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log out Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="TerminateBrowser()[pri:0, instance:Demo.DemoTest1@5d0bf09b]" started-at="2024-11-19T15:52:44 IST" name="TerminateBrowser" finished-at="2024-11-19T15:52:45 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Closed Succesfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TerminateBrowser -->
+      </class> <!-- Demo.DemoTest1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
