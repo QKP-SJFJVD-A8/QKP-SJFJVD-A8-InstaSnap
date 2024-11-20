@@ -6,5 +6,5 @@ public class Sravanthi {
 		System.out.println("Welcome to project");
 
 	}
-
+}
 }
