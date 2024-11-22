@@ -19,9 +19,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	public  WebDriver driver;
 
-	@Parameters("BrowserName")
+	//@Parameters("BrowserName")
 	@BeforeClass
-	public void BrowserSetup(String browser) {
+	public void BrowserSetup() {
+		String browser="chrome";
 		Reporter.log("Browser Launched Succesfully", true);
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -55,8 +56,8 @@ public class BaseTest {
 
 	@BeforeMethod
 	public void login() throws InterruptedException {
-		String uname="Lavanya96";
-		String pswd="Lavanya@2001";
+		String uname="Anusha";
+		String pswd="Anusha@123";
 		
 		
 		Reporter.log("Login Successful", true);

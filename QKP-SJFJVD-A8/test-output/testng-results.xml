@@ -2,60 +2,92 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Signin Successfully]]>
+      <![CDATA[Browser Launched Succesfully]]>
     </line>
     <line>
-      <![CDATA[Thank you, your order has been submitted.]]>
+      <![CDATA[Login Successful]]>
     </line>
     <line>
-      <![CDATA[Signin Successfully]]>
+      <![CDATA[Added product screenshot taken successfully]]>
     </line>
     <line>
-      <![CDATA[Your cart is empty]]>
+      <![CDATA[Log out Successful]]>
+    </line>
+    <line>
+      <![CDATA[Login Successful]]>
+    </line>
+    <line>
+      <![CDATA[screenshot taken successfully after removing product]]>
+    </line>
+    <line>
+      <![CDATA[Log out Successful]]>
+    </line>
+    <line>
+      <![CDATA[Browser Closed Succesfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-11-22T16:53:38 IST" name="Default suite" finished-at="2024-11-22T16:54:25 IST" duration-ms="46596">
+  <suite started-at="2024-11-22T17:23:22 IST" name="Default suite" finished-at="2024-11-22T17:23:42 IST" duration-ms="19720">
     <groups>
     </groups>
-    <test started-at="2024-11-22T16:53:38 IST" name="Default test" finished-at="2024-11-22T16:54:25 IST" duration-ms="46596">
-      <class name="ReptileProduct.VerifyReptileProductTest">
-        <test-method is-config="true" signature="Signin()[pri:0, instance:ReptileProduct.VerifyReptileProductTest@7ef82753]" started-at="2024-11-22T16:53:39 IST" name="Signin" finished-at="2024-11-22T16:53:50 IST" duration-ms="11615" status="PASS">
+    <test started-at="2024-11-22T17:23:22 IST" name="Default test" finished-at="2024-11-22T17:23:42 IST" duration-ms="19720">
+      <class name="CatsProduct.VerifyCatsProduct">
+        <test-method is-config="true" signature="BrowserSetup()[pri:0, instance:CatsProduct.VerifyCatsProduct@7e6f74c]" started-at="2024-11-22T17:23:22 IST" name="BrowserSetup" finished-at="2024-11-22T17:23:23 IST" duration-ms="1521" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Signin Successfully]]>
+              <![CDATA[Browser Launched Succesfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Signin -->
-        <test-method signature="AddProduct()[pri:0, instance:ReptileProduct.VerifyReptileProductTest@7ef82753]" started-at="2024-11-22T16:53:50 IST" name="AddProduct" finished-at="2024-11-22T16:54:07 IST" duration-ms="16474" status="PASS">
+        </test-method> <!-- BrowserSetup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:CatsProduct.VerifyCatsProduct@7e6f74c]" started-at="2024-11-22T17:23:23 IST" name="login" finished-at="2024-11-22T17:23:28 IST" duration-ms="4901" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Thank you, your order has been submitted.]]>
+              <![CDATA[Login Successful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddProduct -->
-        <test-method is-config="true" signature="Signout()[pri:0, instance:ReptileProduct.VerifyReptileProductTest@7ef82753]" started-at="2024-11-22T16:54:07 IST" name="Signout" finished-at="2024-11-22T16:54:07 IST" duration-ms="267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Signout -->
-        <test-method is-config="true" signature="Signin()[pri:0, instance:ReptileProduct.VerifyReptileProductTest@7ef82753]" started-at="2024-11-22T16:54:07 IST" name="Signin" finished-at="2024-11-22T16:54:15 IST" duration-ms="8337" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="addProduct()[pri:0, instance:CatsProduct.VerifyCatsProduct@7e6f74c]" started-at="2024-11-22T17:23:28 IST" name="addProduct" finished-at="2024-11-22T17:23:31 IST" duration-ms="3142" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Signin Successfully]]>
+              <![CDATA[Added product screenshot taken successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Signin -->
-        <test-method signature="RemoveProduct()[pri:0, instance:ReptileProduct.VerifyReptileProductTest@7ef82753]" started-at="2024-11-22T16:54:15 IST" name="RemoveProduct" finished-at="2024-11-22T16:54:25 IST" duration-ms="9479" status="PASS">
+        </test-method> <!-- addProduct -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:CatsProduct.VerifyCatsProduct@7e6f74c]" started-at="2024-11-22T17:23:31 IST" name="logout" finished-at="2024-11-22T17:23:32 IST" duration-ms="506" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Your cart is empty]]>
+              <![CDATA[Log out Successful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- RemoveProduct -->
-        <test-method is-config="true" signature="Signout()[pri:0, instance:ReptileProduct.VerifyReptileProductTest@7ef82753]" started-at="2024-11-22T16:54:25 IST" name="Signout" finished-at="2024-11-22T16:54:25 IST" duration-ms="317" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:CatsProduct.VerifyCatsProduct@7e6f74c]" started-at="2024-11-22T17:23:32 IST" name="login" finished-at="2024-11-22T17:23:36 IST" duration-ms="4294" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Login Successful]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- Signout -->
-      </class> <!-- ReptileProduct.VerifyReptileProductTest -->
+        </test-method> <!-- login -->
+        <test-method signature="removeProduct()[pri:0, instance:CatsProduct.VerifyCatsProduct@7e6f74c]" started-at="2024-11-22T17:23:36 IST" name="removeProduct" finished-at="2024-11-22T17:23:40 IST" depends-on-methods="CatsProduct.VerifyCatsProduct.addProduct" duration-ms="3652" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[screenshot taken successfully after removing product]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- removeProduct -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:CatsProduct.VerifyCatsProduct@7e6f74c]" started-at="2024-11-22T17:23:40 IST" name="logout" finished-at="2024-11-22T17:23:41 IST" duration-ms="1526" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log out Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="TerminateBrowser()[pri:0, instance:CatsProduct.VerifyCatsProduct@7e6f74c]" started-at="2024-11-22T17:23:41 IST" name="TerminateBrowser" finished-at="2024-11-22T17:23:42 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Closed Succesfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TerminateBrowser -->
+      </class> <!-- CatsProduct.VerifyCatsProduct -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
