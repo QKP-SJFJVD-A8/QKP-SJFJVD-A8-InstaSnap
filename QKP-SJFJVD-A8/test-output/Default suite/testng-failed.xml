@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Demo.Lavanya">
+      <class name="BirdsProduct.verifyBirdsProductTest">
         <methods>
-          <include name="addProduct"/>
-          <include name="terminatebrowser"/>
-          <include name="browserSetup"/>
+          <include name="TerminateBrowser"/>
+          <include name="addBirdsProduct"/>
           <include name="logout"/>
           <include name="login"/>
-          <include name="TerminateBrowser"/>
           <include name="BrowserSetup"/>
         </methods>
-      </class> <!-- Demo.Lavanya -->
+      </class> <!-- BirdsProduct.verifyBirdsProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
