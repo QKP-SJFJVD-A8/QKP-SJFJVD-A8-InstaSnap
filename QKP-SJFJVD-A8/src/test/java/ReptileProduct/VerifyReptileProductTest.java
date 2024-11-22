@@ -1,10 +1,18 @@
 package ReptileProduct;
 
+<<<<<<< HEAD
 	
 	import java.io.File;
 	import java.io.IOException;
 	import java.util.concurrent.TimeUnit;
+=======
+import org.testng.Reporter;
+import org.testng.annotations.Test;
 
+public class VerifyReptileProductTest {
+>>>>>>> branch 'InstaSnapShot' of https://github.com/QKP-SJFJVD-A8/QKP-SJFJVD-A8-InstaSnap.git
+
+<<<<<<< HEAD
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.OutputType;
 	import org.openqa.selenium.TakesScreenshot;
@@ -136,3 +144,16 @@ package ReptileProduct;
 	}
 
 
+=======
+	@Test
+	public void addReptileProduct() {
+		Reporter.log("Reptile Product Added Succesful", true);
+	}
+
+	@Test(dependsOnMethods = "addReptileProduct")
+	public void removeReptileProduct() {
+		Reporter.log("Reptile Product Removed Succesful", true);
+
+	}
+}
+>>>>>>> branch 'InstaSnapShot' of https://github.com/QKP-SJFJVD-A8/QKP-SJFJVD-A8-InstaSnap.git
