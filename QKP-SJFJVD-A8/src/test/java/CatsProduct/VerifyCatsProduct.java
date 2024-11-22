@@ -30,7 +30,7 @@ public class VerifyCatsProduct extends BaseTest {
 		File temp = ts.getScreenshotAs(OutputType.FILE);
 		File perm = new File("./CatsProductscreenshot/CatsProduct.png");
 		FileHandler.copy(temp, perm);
-		Reporter.log("Added product screenshot taken successfully",true);		
+		Reporter.log("Added product screenshot taken successfully",true);	
 	}
 
 	@Test(dependsOnMethods = "addProduct")
