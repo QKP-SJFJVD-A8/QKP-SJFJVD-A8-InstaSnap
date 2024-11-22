@@ -19,11 +19,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	public  WebDriver driver;
 
-	//@Parameters("BrowserName")
+	@Parameters("BrowserName")
 	@BeforeClass
-	public void BrowserSetup() {
+	public void BrowserSetup(String browser) {
 		Reporter.log("Browser Launched Succesfully", true);
-		String browser = "chrome";
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			// Step 1.1: Launch the browser - chrome
@@ -56,6 +55,10 @@ public class BaseTest {
 
 	@BeforeMethod
 	public void login() throws InterruptedException {
+		String uname="Lavanya96";
+		String pswd="Lavanya@2001";
+		
+		
 		Reporter.log("Login Successful", true);
 		// Step 1.2 : Navigate to application
 		driver.get("https://petstore.octoperf.com/actions/Catalog.action");
@@ -66,10 +69,10 @@ public class BaseTest {
 		driver.findElement(By.linkText("Sign In")).click();
 
 		// Step 5.1 : Enter the User ID
-		driver.findElement(By.name("username")).sendKeys("Lavanya96");
+		driver.findElement(By.name("username")).sendKeys(uname);
 		// Step 5.2 : Enter the Password
 		driver.findElement(By.name("password")).clear();
-		driver.findElement(By.name("password")).sendKeys("Lavanya@2001");
+		driver.findElement(By.name("password")).sendKeys(pswd);
 
 		// Step 5.3 : Click on "Login" button
 		driver.findElement(By.name("signon")).click();
