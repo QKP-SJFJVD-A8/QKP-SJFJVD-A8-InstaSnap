@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BirdsProduct.verifyBirdsProductTest">
+      <class name="ReptileProduct.VerifyReptileProductTest">
         <methods>
-          <include name="TerminateBrowser"/>
-          <include name="addBirdsProduct"/>
-          <include name="logout"/>
-          <include name="login"/>
-          <include name="BrowserSetup"/>
+          <include name="Signout"/>
+          <include name="Signin"/>
+          <include name="RemoveProduct"/>
+          <include name="AddProduct"/>
         </methods>
-      </class> <!-- BirdsProduct.verifyBirdsProductTest -->
+      </class> <!-- ReptileProduct.VerifyReptileProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
