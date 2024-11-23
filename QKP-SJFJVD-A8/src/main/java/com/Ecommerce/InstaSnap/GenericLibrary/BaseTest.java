@@ -19,10 +19,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 	public  WebDriver driver;
 
-	//@Parameters("BrowserName")
+	@Parameters("BrowserName")
 	@BeforeClass
-	public void BrowserSetup() {
-		String browser="chrome";
+	public void BrowserSetup(String browser) {
 		Reporter.log("Browser Launched Succesfully", true);
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();

@@ -30,7 +30,7 @@ public class verifyBirdsProductTest extends BaseTest {
 		Reporter.log(addmsg.getText(),true);
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File addtemp = ts.getScreenshotAs(OutputType.FILE);
-		File addper = new File("./BirdsScreenshot/Addbirdproduct.png");
+		File addper = new File("./TestScreenshot/BirdsScreenshot/Addbirdproduct.png");
 		FileHandler.copy(addtemp, addper);
 		Reporter.log("Screenshot taken succesfully",true);
 	}
@@ -48,7 +48,7 @@ public class verifyBirdsProductTest extends BaseTest {
 		Reporter.log(remmsg.getText(),true);
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File remtemp = ts.getScreenshotAs(OutputType.FILE);
-		File remper = new File("./BirdsScreenshot/Removebirdproduct.png");
+		File remper = new File("./TestScreenshot/BirdsScreenshot/Removebirdproduct.png");
 		FileHandler.copy(remtemp, remper);
 		Reporter.log("Screenshot taken succesfully",true);
 	}

@@ -13,42 +13,14 @@ import org.openqa.selenium.By;
 	import org.testng.annotations.BeforeMethod;
 	import org.testng.annotations.Test;
 
-	import io.github.bonigarcia.wdm.WebDriverManager;
+import com.Ecommerce.InstaSnap.GenericLibrary.BaseTest;
 
-	public class VerifyReptileProductTest 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+	public class VerifyReptileProductTest extends BaseTest
 	{
-		WebDriver driver;
-		@BeforeMethod
-		public void Signin() throws InterruptedException
-		{
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			driver.get("https://petstore.octoperf.com/actions/Catalog.action");
-			
-			Thread.sleep(1000);
-			// Step 1 : Click on "Sign in" link
-			driver.findElement(By.linkText("Sign In")).click();
-
-			Thread.sleep(1000);
-			// Step 1.1 : Enter the User ID
-			driver.findElement(By.name("username")).sendKeys("ganeshD609");
-			
-			Thread.sleep(1000);
-			// Step 1.2 : Enter the Password
-			driver.findElement(By.name("password")).clear();
-			driver.findElement(By.name("password")).sendKeys("ganesh@609");
-
-			Thread.sleep(1000);
-			// Step 1.3 : Click on "Login" button
-			driver.findElement(By.name("signon")).click();
-			
-			Reporter.log("Signin Successfully", true);
-		}
-		
-		@Test
-		public void AddProduct() throws InterruptedException, IOException
+			@Test
+		public void addReptileProduct() throws InterruptedException, IOException
 		{
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("//area[@alt='Reptiles']")).click();
@@ -83,7 +55,7 @@ import org.openqa.selenium.By;
 			File temp = ts.getScreenshotAs(OutputType.FILE);
 			System.out.println(temp);
 			
-			File perm = new File("./ReptileSS/demo1.png");
+			File perm = new File("./TestScreenshot/ReptileSS/demo1.png");
 			System.out.println(perm);
 			
 			FileHandler.copy(temp, perm);
@@ -93,7 +65,7 @@ import org.openqa.selenium.By;
 		}
 		
 			@Test
-			public void RemoveProduct() throws InterruptedException, IOException
+			public void removeReptileProduct() throws InterruptedException, IOException
 			{
 				//Thread.sleep(1000);
 				//driver.findElement(By.partialLinkText("Return")).click();
@@ -116,7 +88,7 @@ import org.openqa.selenium.By;
 				File temp = ts.getScreenshotAs(OutputType.FILE);
 				System.out.println(temp);
 				
-				File perm = new File("./ReptileSS/demo2.png");
+				File perm = new File("./TestScreenshot/ReptileSS/demo2.png");
 				System.out.println(perm);
 				
 				FileHandler.copy(temp, perm);
@@ -124,25 +96,12 @@ import org.openqa.selenium.By;
 				Thread.sleep(1000);
 				Reporter.log("Your cart is empty", true);
 			}
-			
-			@AfterMethod
-			public void Signout()
-			{
-				driver.close();
-			}
+	
 	
 
 
 
-	@Test
-	public void addReptileProduct() {
-		Reporter.log("Reptile Product Added Succesful", true);
-	}
-
-	@Test(dependsOnMethods = "addReptileProduct")
-	public void removeReptileProduct() {
-		Reporter.log("Reptile Product Removed Succesful", true);
-
-	}
+	
+	
 }
 

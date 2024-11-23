@@ -28,7 +28,7 @@ public class VerifyCatsProduct extends BaseTest {
 		driver.findElement(By.linkText("Confirm")).click();
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File temp = ts.getScreenshotAs(OutputType.FILE);
-		File perm = new File("./CatsProductscreenshot/CatsProduct.png");
+		File perm = new File("./TestScreenshot/CatsProductscreenshot/CatsProduct.png");
 		FileHandler.copy(temp, perm);
 		Reporter.log("Added product screenshot taken successfully",true);	
 	}
@@ -46,7 +46,7 @@ public class VerifyCatsProduct extends BaseTest {
 		driver.findElement(By.linkText("Remove")).click();
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File temp = ts.getScreenshotAs(OutputType.FILE);
-		File perm = new File("./CatsProductscreenshot/removecatsproduct.png");
+		File perm = new File("./TestScreenshot/CatsProductscreenshot/removecatsproduct.png");
 		FileHandler.copy(temp, perm);
 		Reporter.log("screenshot taken successfully after removing product",true);
 	}

@@ -27,7 +27,7 @@ public class VerifyDogsProductTest extends BaseTest{
 		Reporter.log(addmsg.getText(), true);
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File temp = ts.getScreenshotAs(OutputType.FILE);
-		File perm = new File("./DogsProductScreenshot/AddDogProduct.png");
+		File perm = new File("./TestScreenshot/DogsProductScreenshot/AddDogProduct.png");
 		FileHandler.copy(temp, perm);
 		Reporter.log("Screenshot taken succesfully", true);
 	}
@@ -45,7 +45,7 @@ public void removeBirdsProduct() throws IOException {
 	Reporter.log(remmsg.getText(),true);
 	TakesScreenshot ts = (TakesScreenshot) driver;
 	File temp = ts.getScreenshotAs(OutputType.FILE);
-	File perm = new File("./DogsProductScreenshot/RemoveDogsProduct.png");
+	File perm = new File("./TestScreenshot/DogsProductScreenshot/RemoveDogsProduct.png");
 	FileHandler.copy(temp, perm);
 	Reporter.log("Screenshot taken succesfully",true);
 
