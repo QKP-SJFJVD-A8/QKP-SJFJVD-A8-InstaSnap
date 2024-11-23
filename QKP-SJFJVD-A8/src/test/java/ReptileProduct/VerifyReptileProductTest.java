@@ -1,6 +1,6 @@
 package ReptileProduct;
 
-<<<<<<< HEAD
+
 	
 	import java.io.File;
 	import java.io.IOException;
@@ -144,7 +144,7 @@ public class VerifyReptileProductTest {
 	}
 
 
-=======
+
 	@Test
 	public void addReptileProduct() {
 		Reporter.log("Reptile Product Added Succesful", true);
