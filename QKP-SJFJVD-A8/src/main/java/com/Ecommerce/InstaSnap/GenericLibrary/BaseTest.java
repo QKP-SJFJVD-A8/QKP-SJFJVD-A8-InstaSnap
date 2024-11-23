@@ -56,8 +56,8 @@ public class BaseTest {
 
 	@BeforeMethod
 	public void login() throws InterruptedException {
-		String uname="Anusha";
-		String pswd="Anusha@123";
+		String uname="Sahithi83285";
+		String pswd="Sahi@83285";
 		
 		
 		Reporter.log("Login Successful", true);

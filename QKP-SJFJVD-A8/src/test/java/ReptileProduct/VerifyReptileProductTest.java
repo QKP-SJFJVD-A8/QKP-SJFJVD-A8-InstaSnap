@@ -1,19 +1,8 @@
 package ReptileProduct;
-
-
-	
-	import java.io.File;
-	import java.io.IOException;
-	import java.util.concurrent.TimeUnit;
-=======
-import org.testng.Reporter;
-import org.testng.annotations.Test;
-
-public class VerifyReptileProductTest {
->>>>>>> branch 'InstaSnapShot' of https://github.com/QKP-SJFJVD-A8/QKP-SJFJVD-A8-InstaSnap.git
-
-<<<<<<< HEAD
-	import org.openqa.selenium.By;
+import java.io.File;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
 	import org.openqa.selenium.OutputType;
 	import org.openqa.selenium.TakesScreenshot;
 	import org.openqa.selenium.WebDriver;
@@ -26,7 +15,7 @@ public class VerifyReptileProductTest {
 
 	import io.github.bonigarcia.wdm.WebDriverManager;
 
-	public class VerifyReptileProductTest
+	public class VerifyReptileProductTest 
 	{
 		WebDriver driver;
 		@BeforeMethod
@@ -141,7 +130,7 @@ public class VerifyReptileProductTest {
 			{
 				driver.close();
 			}
-	}
+	
 
 
 
@@ -156,4 +145,4 @@ public class VerifyReptileProductTest {
 
 	}
 }
->>>>>>> branch 'InstaSnapShot' of https://github.com/QKP-SJFJVD-A8/QKP-SJFJVD-A8-InstaSnap.git
+
