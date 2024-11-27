@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 26 12:34:58 IST 2024</td>
+<td>Started on:</td><td>Wed Nov 27 12:25:38 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15889 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1870 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='DemoLIstener.DemoTest.m1()'><b>m1</b><br>Test class: DemoLIstener.DemoTest<br/>
-<a href="#Output-847174133" onClick='toggleBox("Output-847174133", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-847174133" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-847174133">
-M1 Method Failed<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.fail(Assert.java:115)
-	at DemoLIstener.DemoTest.m1(DemoTest.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+<td title='com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest.demoRegisterTest()'><b>demoRegisterTest</b><br>Test class: com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -116,20 +104,25 @@ M1 Method Failed<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace847174133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace847174133'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.fail(Assert.java:115)
-	at DemoLIstener.DemoTest.m1(DemoTest.java:19)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at com.Ecommerce.InstaSnap.GenericLibrary.BaseTest.registerData(BaseTest.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+	... 25 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1713129148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1713129148'><pre>java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -149,9 +142,19 @@ M1 Method Failed<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at com.Ecommerce.InstaSnap.GenericLibrary.BaseTest.registerData(BaseTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+	... 25 more
 </pre></div></td>
 <td>0</td>
-<td>DemoLIstener.DemoTest@7674f035</td></tr>
+<td>com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest@235ecd9f</td></tr>
 </table><p>
 </body>
 </html>

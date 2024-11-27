@@ -64,4 +64,13 @@ public class VerifyRegisterTest extends BaseTest {
 
 	}
 
+	@Test(dataProvider = "registerData")
+	public void demoRegisterTest(int id, String name, String dept) {
+		System.out.println("-------------");
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(dept);
+		System.out.println("--------------");
+	}
+
 }

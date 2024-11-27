@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import com.Ecommerce.InstaSnap.WebDriverLibrary.WebDriverUtility;
@@ -27,11 +28,38 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	public  WebDriver driver;
+	public WebDriver driver;
 	public static WebDriver static_driver;
 	public ExtentSparkReporter spark = null;
 	public ExtentTest test = null;
 	public ExtentReports report = null;
+
+	@DataProvider
+	public    Object[][] registerData() {
+
+		Object[][] data = new Object[3][3];
+		
+		data[0][0]=101;
+		data[0][1]="Ganesh";
+		data[0][2]="Tesing";
+		
+		data[1][0]=102;
+		data[1][1]="Kalesha";
+		data[1][2]="Devops";
+		
+		
+		data[2][0]=103;
+		data[2][1]="Akshith";
+		data[2][2]="Develeoper";
+		
+		data[3][0]=101;
+		data[3][1]="Ganesh";
+		data[3][2]="Tesing";
+		
+		
+		
+		return data;
+	}
 
 	@BeforeSuite
 	public void reportConfig() {
@@ -72,11 +100,9 @@ public class BaseTest {
 
 		String browser = "chrome";
 		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
-		static_driver=driver;
-		
-		
-		
+		driver = new ChromeDriver();
+		static_driver = driver;
+
 		driver.manage().window().maximize();
 
 	}

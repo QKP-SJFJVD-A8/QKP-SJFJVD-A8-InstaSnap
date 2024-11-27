@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Harry\AppData\Local\Temp\testng-eclipse-907940767\testng-customsuite.xml</span>
+                    <span>C:\Users\Harry\AppData\Local\Temp\testng-eclipse-1969884377\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="DemoLIstener.DemoTest" class="method navigator-link" hash-for-method="m1">m1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest" class="method navigator-link" hash-for-method="demoRegisterTest">demoRegisterTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,27 +121,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">DemoLIstener.DemoTest</span>
+              <span class="class-name">com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="m1">
-                  </a> <!-- m1 -->
-                  <span class="method-name">m1</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.fail(Assert.java:115)
-	at DemoLIstener.DemoTest.m1(DemoTest.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+                  <a name="demoRegisterTest">
+                  </a> <!-- demoRegisterTest -->
+                  <span class="method-name">demoRegisterTest</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -161,6 +156,16 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at com.Ecommerce.InstaSnap.GenericLibrary.BaseTest.registerData(BaseTest.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
+	... 25 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -170,7 +175,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Harry\AppData\Local\Temp\testng-eclipse-907940767\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Harry\AppData\Local\Temp\testng-eclipse-1969884377\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -179,11 +184,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;DemoLIstener.DemoTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;m1&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- DemoLIstener.DemoTest --&gt;
+      &lt;class name=&quot;com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -225,14 +226,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'm1')
-data.setCell(0, 2, 'DemoLIstener.DemoTest')
-data.setCell(0, 3, 9);
+data.setCell(0, 1, 'demoRegisterTest')
+data.setCell(0, 2, 'com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest')
+data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -243,19 +244,20 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">m1</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">M1 Method Failed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Register</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -264,36 +266,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">DemoLIstener.DemoTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">reportConfig</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">BrowserSetup</span>
-                <span class="method-start">334 ms</span>
+                <span class="method-start">292 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">login</span>
-                <span class="method-start">2242 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">m1</span>
-                <span class="method-start">13261 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">logout</span>
-                <span class="method-start">13538 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">TerminateBrowser</span>
-                <span class="method-start">16065 ms</span>
+                <span class="method-start">1984 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">reportTerminate</span>
-                <span class="method-start">16246 ms</span>
+                <span class="method-start">2194 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
