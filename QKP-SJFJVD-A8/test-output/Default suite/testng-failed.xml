@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CatsProduct.VerifyCatsProduct">
+      <class name="DemoLIstener.DemoTest">
         <methods>
-          <include name="addProduct"/>
-          <include name="removeProduct"/>
+          <include name="reportConfig"/>
           <include name="TerminateBrowser"/>
           <include name="logout"/>
           <include name="login"/>
+          <include name="reportTerminate"/>
+          <include name="m1"/>
           <include name="BrowserSetup"/>
         </methods>
-      </class> <!-- CatsProduct.VerifyCatsProduct -->
+      </class> <!-- DemoLIstener.DemoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

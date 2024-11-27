@@ -14,7 +14,6 @@ public class VerifyDogsProductTest extends BaseTest{
 	@Test
 	public void adddogsproduct() throws IOException {
 		driver.findElement(By.xpath("//area[contains(@alt,'Dogs')]")).click();
-		;
 		driver.findElement(By.linkText("K9-BD-01")).click();
 		driver.findElement(By.linkText("Add to Cart")).click();
 		driver.findElement(By.name("EST-6")).clear();

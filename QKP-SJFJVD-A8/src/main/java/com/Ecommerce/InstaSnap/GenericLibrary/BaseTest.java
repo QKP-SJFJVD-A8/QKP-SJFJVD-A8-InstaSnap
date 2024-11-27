@@ -10,55 +10,82 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+
+import com.Ecommerce.InstaSnap.WebDriverLibrary.WebDriverUtility;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	public  WebDriver driver;
+	public static WebDriver static_driver;
+	public ExtentSparkReporter spark = null;
+	public ExtentTest test = null;
+	public ExtentReports report = null;
 
-	@Parameters("BrowserName")
+	@BeforeSuite
+	public void reportConfig() {
+
+		// Create the SparkReport
+		spark = new ExtentSparkReporter("./AdvanceReports/report.html");
+
+		// Configure the SparkReport Information
+		spark.config().setDocumentTitle("--Doc_Title--");
+		spark.config().setReportName("--Report_Title--");
+		spark.config().setTheme(Theme.DARK);
+
+		// Create the Extent Report
+		report = new ExtentReports();
+
+		// Attach the Spark Report and ExtentReport
+		report.attachReporter(spark);
+
+		// Configure the System Information in Extent Report
+		report.setSystemInfo("DeviceName:", "Harry");
+		report.setSystemInfo("OperatingSystem:", "WINDOWS 11");
+		report.setSystemInfo("Browser:", "Chrome");
+		report.setSystemInfo("BrowserVersion:", "chrome-128.0.6613.85 ");
+
+	}
+
+	@AfterSuite
+	public void reportTerminate() {
+
+		// Flush the Report Information
+		report.flush();
+
+	}
+
+	// @Parameters("BrowserName")
 	@BeforeClass
-	public void BrowserSetup(String browser) {
-		Reporter.log("Browser Launched Succesfully", true);
-		if (browser.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			// Step 1.1: Launch the browser - chrome
-			driver = new ChromeDriver();
-		}
+	public void BrowserSetup() {
 
-		else if (browser.equals("edge")) {
-			// Step 1.1: Launch the browser - Edge
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-		}
-
-		else if (browser.equals("firefox")) {
-			// Step 1.1: Launch the browser - Firefox
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-		}
+		String browser = "chrome";
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
+		static_driver=driver;
 		
-		else {
-			Reporter.log("You Stupid Fellow Enter Valid Browser Name !!!!!!!!!!!!!!!!!!",true);
-			Reporter.log("So I Will Run My Default Browser",true);
-			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
-		}
-
+		
+		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
 
 	@BeforeMethod
 	public void login() throws InterruptedException {
-		String uname="Sahithi83285";
-		String pswd="Sahi@83285";
-		
-		
+		String uname = "Sahithi83285";
+		String pswd = "Sahi@83285";
+
 		Reporter.log("Login Successful", true);
 		// Step 1.2 : Navigate to application
 		driver.get("https://petstore.octoperf.com/actions/Catalog.action");
@@ -83,7 +110,6 @@ public class BaseTest {
 		Reporter.log("Log out Successful", true);
 		// Click On "SignOut" Button
 		driver.findElement(By.linkText("Sign Out")).click();
-
 	}
 
 	@AfterClass

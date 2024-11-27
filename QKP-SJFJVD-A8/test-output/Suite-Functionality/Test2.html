@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 23 17:03:01 IST 2024</td>
+<td>Started on:</td><td>Mon Nov 25 16:48:23 GMT+05:30 2024</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25683 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38575 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,31 +76,79 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='BirdsProduct.verifyBirdsProductTest.removeBirdsProduct()'><b>removeBirdsProduct</b><br>Test class: BirdsProduct.verifyBirdsProductTest<br/>
-<a href="#Output-368040556" onClick='toggleBox("Output-368040556", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-368040556" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-368040556">
-Your cart is empty.<br/>
-Screenshot taken succesfully<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>BirdsProduct.verifyBirdsProductTest@7d9d0818</td></tr>
+<td title='BirdsProduct.verifyBirdsProductTest.removeBirdsProduct()'><b>removeBirdsProduct</b><br>Test class: BirdsProduct.verifyBirdsProductTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.report&quot; is null
+	at BirdsProduct.verifyBirdsProductTest.removeBirdsProduct(verifyBirdsProductTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1542294638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1542294638'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.report&quot; is null
+	at BirdsProduct.verifyBirdsProductTest.removeBirdsProduct(verifyBirdsProductTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>BirdsProduct.verifyBirdsProductTest@5386659f</td></tr>
 <tr>
-<td title='BirdsProduct.verifyBirdsProductTest.addBirdsProduct()'><b>addBirdsProduct</b><br>Test class: BirdsProduct.verifyBirdsProductTest<br/>
-<a href="#Output-932312334" onClick='toggleBox("Output-932312334", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-932312334" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-932312334">
-Thank you, your order has been submitted.<br/>
-Screenshot taken succesfully<br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>BirdsProduct.verifyBirdsProductTest@7d9d0818</td></tr>
+<td title='BirdsProduct.verifyBirdsProductTest.addBirdsProduct()'><b>addBirdsProduct</b><br>Test class: BirdsProduct.verifyBirdsProductTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.report&quot; is null
+	at BirdsProduct.verifyBirdsProductTest.addBirdsProduct(verifyBirdsProductTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1308523473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1308523473'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentReports.createTest(String)&quot; because &quot;this.report&quot; is null
+	at BirdsProduct.verifyBirdsProductTest.addBirdsProduct(verifyBirdsProductTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>0</td>
+<td>BirdsProduct.verifyBirdsProductTest@5386659f</td></tr>
 </table><p>
 </body>
 </html>
