@@ -1,4 +1,4 @@
-package com.Ecommerce.InstaSnap.GenericLibrary;
+package com.GenericLibrary;
 
 public interface FrameworkConstant 
 {

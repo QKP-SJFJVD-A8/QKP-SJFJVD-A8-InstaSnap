@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.Ecommerce.InstaSnap.GenericLibrary.BaseTest;
+import com.GenericLibrary.BaseTest;
+
 
 public class VerifyRegisterTest extends BaseTest {
 	@Test(enabled = false)

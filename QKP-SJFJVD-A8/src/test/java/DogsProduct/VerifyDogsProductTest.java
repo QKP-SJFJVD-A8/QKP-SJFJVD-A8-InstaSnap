@@ -8,7 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-import com.Ecommerce.InstaSnap.GenericLibrary.BaseTest;
+
+import com.GenericLibrary.BaseTest;
 
 public class VerifyDogsProductTest extends BaseTest{
 	@Test

@@ -1,4 +1,4 @@
-package com.Ecommerce.InstaSnap.WebDriverLibrary;
+package com.GenericLibrary;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

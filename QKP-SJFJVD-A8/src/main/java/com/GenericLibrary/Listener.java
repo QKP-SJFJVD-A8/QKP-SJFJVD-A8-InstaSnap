@@ -1,4 +1,4 @@
-package com.Ecommerce.InstaSnap.ListenerLibrary;
+package com.GenericLibrary;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,9 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
-import com.Ecommerce.InstaSnap.GenericLibrary.BaseTest;
-import com.Ecommerce.InstaSnap.WebDriverLibrary.WebDriverUtility;
 
 public class Listener implements ITestListener {
 

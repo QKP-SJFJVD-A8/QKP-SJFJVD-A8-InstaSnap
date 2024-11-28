@@ -11,7 +11,7 @@ import org.openqa.selenium.io.FileHandler;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.Ecommerce.InstaSnap.GenericLibrary.BaseTest;
+import com.GenericLibrary.BaseTest;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 

@@ -5,11 +5,9 @@ import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.Ecommerce.InstaSnap.GenericLibrary.BaseTest;
+import com.GenericLibrary.BaseTest;
 
-
-
-@Listeners(com.Ecommerce.InstaSnap.ListenerLibrary.Listener.class)
+@Listeners(com.GenericLibrary.Listener.class)
 public class DemoTest extends BaseTest{
 
 	@Test
