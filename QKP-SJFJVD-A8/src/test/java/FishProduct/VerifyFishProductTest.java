@@ -9,13 +9,13 @@ import com.GenericLibrary.BaseTest;
 public class VerifyFishProductTest extends BaseTest 
 {
 
-	@Test
+	@Test(groups = "A")
 	public void addFishProduct() 
 	{
 		Reporter.log("Fish Product Added Succesful", true);
 	}
 
-	@Test(dependsOnMethods = "addFishProduct")
+	@Test(dependsOnMethods = "addFishProduct",groups = "B")
 	public void removeFishProduct() 
 	{
 		Reporter.log("Fish Product Removed Succesful", true);

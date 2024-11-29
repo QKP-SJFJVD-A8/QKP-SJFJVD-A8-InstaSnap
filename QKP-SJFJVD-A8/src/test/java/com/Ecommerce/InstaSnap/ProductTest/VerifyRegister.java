@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 import com.GenericLibrary.BaseTest;
 
 
-public class VerifyRegisterTest extends BaseTest {
-	@Test(enabled = false)
+public class VerifyRegister extends BaseTest {
+	@Test(enabled = false,groups = "C")
 	public void Register() throws InterruptedException {
 
 		// Step 1.2 : Navigate to application
@@ -65,7 +65,7 @@ public class VerifyRegisterTest extends BaseTest {
 
 	}
 
-	@Test(dataProvider = "registerData")
+	@Test(dataProvider = "registerData",groups = "C")
 	public void demoRegisterTest(int id, String name, String dept) {
 		System.out.println("-------------");
 		System.out.println(id);

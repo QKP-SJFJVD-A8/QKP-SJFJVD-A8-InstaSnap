@@ -1,84 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Login Successful]]>
+    </line>
+    <line>
+      <![CDATA[M1 Method Failed]]>
+    </line>
+    <line>
+      <![CDATA[Log out Successful]]>
+    </line>
     <line>
       <![CDATA[Browser Closed Succesfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-11-27T12:25:38 IST" name="Default suite" finished-at="2024-11-27T12:25:40 IST" duration-ms="1870">
+  <suite started-at="2024-11-29T11:43:03 IST" name="Suite-Functionality" finished-at="2024-11-29T11:43:11 IST" duration-ms="7847">
     <groups>
     </groups>
-    <test started-at="2024-11-27T12:25:38 IST" name="Default test" finished-at="2024-11-27T12:25:40 IST" duration-ms="1870">
-      <class name="com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest">
-        <test-method is-config="true" signature="reportConfig()[pri:0, instance:com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest@235ecd9f]" started-at="2024-11-27T12:25:37 IST" name="reportConfig" finished-at="2024-11-27T12:25:38 IST" duration-ms="273" status="PASS">
+    <test started-at="2024-11-29T11:43:03 IST" name="Test5" finished-at="2024-11-29T11:43:11 IST" duration-ms="7847">
+      <class name="DemoLIstener.DemoTest">
+        <test-method is-config="true" signature="reportConfig()[pri:0, instance:DemoLIstener.DemoTest@3b0fe47a]" started-at="2024-11-29T11:43:03 IST" name="reportConfig" finished-at="2024-11-29T11:43:03 IST" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportConfig -->
-        <test-method is-config="true" signature="BrowserSetup()[pri:0, instance:com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest@235ecd9f]" started-at="2024-11-27T12:25:38 IST" name="BrowserSetup" finished-at="2024-11-27T12:25:39 IST" duration-ms="1664" status="PASS">
+        <test-method is-config="true" signature="BrowserSetup()[pri:0, instance:DemoLIstener.DemoTest@3b0fe47a]" started-at="2024-11-29T11:43:03 IST" name="BrowserSetup" finished-at="2024-11-29T11:43:05 IST" duration-ms="1702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserSetup -->
-        <test-method signature="demoRegisterTest(int,java.lang.String,java.lang.String)[pri:0, instance:com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest@235ecd9f]" started-at="2024-11-27T12:25:39 IST" name="demoRegisterTest" data-provider="registerData" finished-at="2024-11-27T12:25:39 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-at com.Ecommerce.InstaSnap.GenericLibrary.BaseTest.registerData(BaseTest.java:55)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-... 25 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method is-config="true" signature="login()[pri:0, instance:DemoLIstener.DemoTest@3b0fe47a]" started-at="2024-11-29T11:43:05 IST" name="login" finished-at="2024-11-29T11:43:10 IST" duration-ms="5176" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Login Successful]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- demoRegisterTest -->
-        <test-method is-config="true" signature="TerminateBrowser()[pri:0, instance:com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest@235ecd9f]" started-at="2024-11-27T12:25:39 IST" name="TerminateBrowser" finished-at="2024-11-27T12:25:40 IST" duration-ms="157" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="m1()[pri:0, instance:DemoLIstener.DemoTest@3b0fe47a]" started-at="2024-11-29T11:43:10 IST" name="m1" finished-at="2024-11-29T11:43:10 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[M1 Method Failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:DemoLIstener.DemoTest@3b0fe47a]" started-at="2024-11-29T11:43:10 IST" name="logout" finished-at="2024-11-29T11:43:11 IST" duration-ms="667" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log out Successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="TerminateBrowser()[pri:0, instance:DemoLIstener.DemoTest@3b0fe47a]" started-at="2024-11-29T11:43:11 IST" name="TerminateBrowser" finished-at="2024-11-29T11:43:11 IST" duration-ms="233" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Closed Succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- TerminateBrowser -->
-        <test-method is-config="true" signature="reportTerminate()[pri:0, instance:com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest@235ecd9f]" started-at="2024-11-27T12:25:40 IST" name="reportTerminate" finished-at="2024-11-27T12:25:40 IST" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="reportTerminate()[pri:0, instance:DemoLIstener.DemoTest@3b0fe47a]" started-at="2024-11-29T11:43:11 IST" name="reportTerminate" finished-at="2024-11-29T11:43:11 IST" duration-ms="522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTerminate -->
-      </class> <!-- com.Ecommerce.InstaSnap.ProductTest.VerifyRegisterTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- DemoLIstener.DemoTest -->
+    </test> <!-- Test5 -->
+  </suite> <!-- Suite-Functionality -->
 </testng-results>

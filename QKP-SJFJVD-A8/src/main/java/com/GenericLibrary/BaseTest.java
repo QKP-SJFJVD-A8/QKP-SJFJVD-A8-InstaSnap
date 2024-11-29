@@ -51,9 +51,9 @@ public class BaseTest {
 		data[2][1]="Akshith";
 		data[2][2]="Develeoper";
 		
-		data[3][0]=101;
-		data[3][1]="Ganesh";
-		data[3][2]="Tesing";
+//		data[3][0]=101;
+//		data[3][1]="Ganesh";
+//		data[3][2]="Tesing";
 		
 		
 		

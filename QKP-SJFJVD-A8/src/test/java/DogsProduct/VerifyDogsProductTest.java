@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.GenericLibrary.BaseTest;
 
 public class VerifyDogsProductTest extends BaseTest{
-	@Test
+	@Test(groups = "A")
 	public void adddogsproduct() throws IOException {
 		driver.findElement(By.xpath("//area[contains(@alt,'Dogs')]")).click();
 		driver.findElement(By.linkText("K9-BD-01")).click();
@@ -32,8 +32,8 @@ public class VerifyDogsProductTest extends BaseTest{
 		Reporter.log("Screenshot taken succesfully", true);
 	}
 
-@Test
-public void removeBirdsProduct() throws IOException {
+@Test(groups = "B")
+public void removeDogsProduct() throws IOException {
 	driver.findElement(By.xpath("//area[contains(@alt,'Dogs')]")).click();
 	driver.findElement(By.linkText("K9-BD-01")).click();
 	driver.findElement(By.linkText("Add to Cart")).click();

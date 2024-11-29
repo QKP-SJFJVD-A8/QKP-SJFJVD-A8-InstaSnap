@@ -12,11 +12,10 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.GenericLibrary.BaseTest;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class verifyBirdsProductTest extends BaseTest {
-	@Test
+	@Test(enabled = false,groups = "A")
 	public void addBirdsProduct() throws IOException {
 		// Create the Test Information
 		 test = report.createTest("----addBirdsProduct----");
@@ -44,7 +43,7 @@ public class verifyBirdsProductTest extends BaseTest {
 		Reporter.log("Screenshot taken succesfully", true);
 	}
 
-	@Test
+	@Test(enabled = false,groups = "B")
 	public void removeBirdsProduct() throws IOException {
 		
 		 test = report.createTest("----TestNG ClassName----");

@@ -19,7 +19,7 @@ import com.GenericLibrary.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class VerifyReptileProductTest extends BaseTest {
-	@Test
+	@Test(groups = "A")
 	public void addReptileProduct() throws InterruptedException, IOException {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//area[@alt='Reptiles']")).click();
@@ -52,10 +52,8 @@ public class VerifyReptileProductTest extends BaseTest {
 
 		Thread.sleep(2000);
 		File temp = ts.getScreenshotAs(OutputType.FILE);
-		System.out.println(temp);
 
 		File perm = new File("./TestScreenshot/ReptileSS/demo1.png");
-		System.out.println(perm);
 
 		FileHandler.copy(temp, perm);
 
@@ -63,7 +61,7 @@ public class VerifyReptileProductTest extends BaseTest {
 		Reporter.log("Thank you, your order has been submitted.", true);
 	}
 
-	@Test
+	@Test(dependsOnMethods = "addReptileProduct",groups = "B")
 	public void removeReptileProduct() throws InterruptedException, IOException {
 		// Thread.sleep(1000);
 		// driver.findElement(By.partialLinkText("Return")).click();
@@ -84,10 +82,8 @@ public class VerifyReptileProductTest extends BaseTest {
 
 		Thread.sleep(2000);
 		File temp = ts.getScreenshotAs(OutputType.FILE);
-		System.out.println(temp);
 
 		File perm = new File("./TestScreenshot/ReptileSS/demo2.png");
-		System.out.println(perm);
 
 		FileHandler.copy(temp, perm);
 
